@@ -48,7 +48,7 @@ public class GetJobMethods {
 
 
     public void create_new_user_with_status_code(int post_status_code) throws FileNotFoundException {
-      String file = ".\\src\\test\\resources\\Json_files\\Create_users.json";
+      String file = "/src/test/resources/Json_files/Create_users.json";
        JSONObject data = file_reader(file);
        String random_value = getRandomNumaric(2);
 

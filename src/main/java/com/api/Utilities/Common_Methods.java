@@ -31,7 +31,7 @@ public class Common_Methods {
 
 
     public static JSONObject file_reader(String file_path) throws FileNotFoundException {
-        File fi = new File(file_path);
+        File fi = new File(System.getProperty("user.dir")+file_path);
         FileReader fr = new FileReader(fi);
         JSONTokener tokener = new JSONTokener(fr);
         return new JSONObject(tokener);
